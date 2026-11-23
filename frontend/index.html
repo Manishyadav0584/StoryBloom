@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff6ea">
+    <meta name="description" content="StoryBloom turns one story idea into a written, illustrated picture book you can read online or download as a PDF.">
+    <title>StoryBloom — Create Magical Stories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#storyForm">Skip to the story form</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="brand" aria-label="StoryBloom home">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="9" r="5.5" fill="#f6c3d3"/>
+                <circle cx="23" cy="16" r="5.5" fill="#d9d0f5"/>
+                <circle cx="16" cy="23" r="5.5" fill="#cdeedf"/>
+                <circle cx="9" cy="16" r="5.5" fill="#ffeab3"/>
+                <circle cx="16" cy="16" r="4.2" fill="#c4507a"/>
+            </svg>
+            <span>StoryBloom</span>
+        </a>
+        <span class="nav-tag">Picture books, written and painted for you</span>
+    </nav>
+
+    <main>
+
+        <!-- Hero and Story Creator -->
+        <section class="hero" id="heroSection">
+
+            <div class="hero-inner">
+
+                <div class="hero-copy">
+
+                    <h1>Tell us a story idea. We'll turn it into a picture book.</h1>
+
+                    <p class="hero-description">
+                        StoryBloom writes the chapters, paints every scene, and binds
+                        it all into a book you can read right here or download as a PDF.
+                    </p>
+
+                    <!-- Whimsical hero illustration -->
+                    <div class="hero-art">
+                        <svg viewBox="0 0 520 560" role="img" aria-label="A sleepy moon above pastel hills, with a glowing open storybook in the foreground">
+                            <defs>
+                                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#d4c9f5"/>
+                                    <stop offset="0.55" stop-color="#f8d6e2"/>
+                                    <stop offset="1" stop-color="#ffecd0"/>
+                                </linearGradient>
+                                <radialGradient id="bookGlow" cx="0.5" cy="0.5" r="0.5">
+                                    <stop offset="0" stop-color="#fff6c9" stop-opacity="0.95"/>
+                                    <stop offset="1" stop-color="#fff6c9" stop-opacity="0"/>
+                                </radialGradient>
+                                <clipPath id="archClip">
+                                    <path d="M30 548V270C30 140 130 32 260 32s230 108 230 238v278z"/>
+                                </clipPath>
+                                <path id="sparkle" d="M0-11 L2.8-2.8 L11 0 L2.8 2.8 L0 11 L-2.8 2.8 L-11 0 L-2.8-2.8Z"/>
+                            </defs>
+
+                            <g clip-path="url(#archClip)">
+                                <rect x="0" y="0" width="520" height="560" fill="url(#skyGrad)"/>
+
+                                <!-- Sleepy moon -->
+                                <g class="art-moon">
+                                    <circle cx="352" cy="158" r="54" fill="#fff2c4"/>
+                                    <circle cx="334" cy="150" r="9" fill="#ffe7a0" opacity="0.7"/>
+                                    <circle cx="372" cy="178" r="6" fill="#ffe7a0" opacity="0.7"/>
+                                    <path d="M330 152 q7 7 14 0" fill="none" stroke="#8a6f9e" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M360 152 q7 7 14 0" fill="none" stroke="#8a6f9e" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M344 172 q8 8 16 0" fill="none" stroke="#c4507a" stroke-width="3" stroke-linecap="round"/>
+                                    <circle cx="326" cy="166" r="6" fill="#f6b3c7" opacity="0.7"/>
+                                    <circle cx="378" cy="166" r="6" fill="#f6b3c7" opacity="0.7"/>
+                                </g>
+
+                                <!-- Stars -->
+                                <use class="art-star" href="#sparkle" x="120" y="110" fill="#fffdf4"/>
+                                <use class="art-star" href="#sparkle" x="205" y="72" fill="#fff0b8" style="animation-delay:.8s"/>
+                                <use class="art-star" href="#sparkle" x="190" y="190" fill="#fffdf4" style="animation-delay:1.6s"/>
+                                <use class="art-star" href="#sparkle" x="440" y="250" fill="#fffdf4" style="animation-delay:2.2s"/>
+                                <use class="art-star" href="#sparkle" x="80" y="250" fill="#fff0b8" style="animation-delay:1.1s"/>
+
+                                <!-- Clouds -->
+                                <g class="art-cloud" fill="#ffffff" opacity="0.88">
+                                    <ellipse cx="130" cy="214" rx="46" ry="16"/>
+                                    <circle cx="112" cy="204" r="16"/>
+                                    <circle cx="142" cy="198" r="20"/>
+                                </g>
+                                <g class="art-cloud slow" fill="#ffffff" opacity="0.78">
+                                    <ellipse cx="410" cy="300" rx="44" ry="14"/>
+                                    <circle cx="395" cy="291" r="14"/>
+                                    <circle cx="423" cy="287" r="18"/>
+                                </g>
+
+                                <!-- Hills -->
+                                <path d="M0 360 C90 300 170 312 250 350 S400 392 520 322 V560 H0Z" fill="#d3f0e1"/>
+                                <path d="M0 432 C110 382 200 402 290 432 S450 452 520 402 V560 H0Z" fill="#b8e5cf"/>
+
+                                <!-- Little tree and house -->
+                                <g>
+                                    <rect x="92" y="372" width="9" height="32" rx="3" fill="#b88f84"/>
+                                    <circle cx="96" cy="364" r="24" fill="#8fd1b3"/>
+                                    <circle cx="82" cy="378" r="15" fill="#a3dbc1"/>
+                                    <circle cx="112" cy="376" r="15" fill="#a3dbc1"/>
+                                </g>
+                                <g>
+                                    <rect x="404" y="384" width="46" height="34" rx="4" fill="#fff3e6"/>
+                                    <path d="M398 386 L427 358 L456 386Z" fill="#f2a6bd"/>
+                                    <rect x="420" y="398" width="14" height="20" rx="7" fill="#c9b8ec"/>
+                                </g>
+
+                                <path d="M0 492 C120 456 230 472 330 496 S470 506 520 470 V560 H0Z" fill="#f8c9d8"/>
+
+                                <!-- Glowing book -->
+                                <circle cx="260" cy="440" r="120" fill="url(#bookGlow)" class="art-glow"/>
+                                <g class="art-book">
+                                    <path d="M260 452 C222 428 172 428 130 442 V504 C172 490 222 490 260 508Z" fill="#fffdf8" stroke="#d6c7ea" stroke-width="3" stroke-linejoin="round"/>
+                                    <path d="M260 452 C298 428 348 428 390 442 V504 C348 490 298 490 260 508Z" fill="#fffaf0" stroke="#d6c7ea" stroke-width="3" stroke-linejoin="round"/>
+                                    <path d="M150 458 C180 450 215 452 244 466 M150 472 C180 464 215 466 244 480" stroke="#e7dcf3" stroke-width="3" stroke-linecap="round" fill="none"/>
+                                    <path d="M276 466 C305 452 340 450 370 458 M276 480 C305 466 340 464 370 472" stroke="#e7dcf3" stroke-width="3" stroke-linecap="round" fill="none"/>
+                                </g>
+
+                                <!-- Sparkles rising from the book -->
+                                <use class="art-rise" href="#sparkle" x="226" y="396" fill="#fff0b8"/>
+                                <use class="art-rise" href="#sparkle" x="262" y="362" fill="#ffffff" style="animation-delay:1.1s"/>
+                                <use class="art-rise" href="#sparkle" x="300" y="402" fill="#f8c9d8" style="animation-delay:2s"/>
+                            </g>
+
+                            <path d="M30 548V270C30 140 130 32 260 32s230 108 230 238v278z" fill="none" stroke="#ffffff" stroke-width="10"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div class="creator-card">
+
+                    <form id="storyForm">
+
+                        <h2 class="card-title">Start your book</h2>
+
+                        <label for="topic">
+                            What should your story be about?
+                        </label>
+
+                        <textarea
+                            id="topic"
+                            placeholder="A little dragon who dreams of touching the stars..."
+                            required
+                            minlength="3"
+                            maxlength="200"
+                        ></textarea>
+
+                        <div class="idea-chips">
+                            <span class="chips-label">Need a spark?</span>
+                            <button type="button" class="chip" data-idea="A shy fox who collects lullabies from the forest">A fox who collects lullabies</button>
+                            <button type="button" class="chip" data-idea="A robot gardener who plants stars on a rooftop">A robot who plants stars</button>
+                            <button type="button" class="chip" data-idea="A tiny whale who is afraid of the dark ocean">A whale afraid of the dark</button>
+                        </div>
+
+                        <!-- Age and Moral -->
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="age">Reader's age</label>
+
+                                <select id="age" required>
+                                    <option value="3">3 years</option>
+                                    <option value="4">4 years</option>
+                                    <option value="5">5 years</option>
+                                    <option value="6">6 years</option>
+                                    <option value="7" selected>7 years</option>
+                                    <option value="8">8 years</option>
+                                    <option value="9">9 years</option>
+                                    <option value="10">10 years</option>
+                                    <option value="11">11 years</option>
+                                    <option value="12">12 years</option>
+                                    <option value="13">13 years</option>
+                                    <option value="14">14 years</option>
+                                    <option value="15">15 years</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="moral">
+                                    Story lesson <span>(optional)</span>
+                                </label>
+
+                                <input
+                                    id="moral"
+                                    type="text"
+                                    placeholder="e.g. Courage and kindness"
+                                    maxlength="200"
+                                >
+                            </div>
+
+                        </div>
+
+                        <!-- Page and Illustration Customization -->
+                        <div class="form-row customization-row">
+
+                            <div class="form-field">
+                                <label for="pages">
+                                    📖 Number of pages
+                                </label>
+
+                                <select id="pages" required>
+                                    <option value="6">6 pages</option>
+                                    <option value="10" selected>10 pages</option>
+                                    <option value="15">15 pages</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="imageCount">
+                                    🎨 Number of illustrations
+                                </label>
+
+                                <select id="imageCount" required>
+                                    <option value="3">3 illustrations</option>
+                                    <option value="5" selected>5 illustrations</option>
+                                    <option value="8">8 illustrations</option>
+                                    <option value="10">10 illustrations</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <p class="form-note">
+                            Your selected illustration count includes the cover image.
+                        </p>
+
+                        <button type="submit" id="generateButton">
+                            <span>✨ Create my storybook</span>
+                        </button>
+
+                        <p class="form-note">
+                            Made with imagination, just for you.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Loading Section -->
+        <section id="loadingSection" class="loading-section hidden" aria-live="polite">
+
+            <div class="loading-animation">
+                <svg viewBox="0 0 120 100" aria-hidden="true">
+                    <path d="M60 30 C44 18 22 18 8 26 V80 C22 72 44 72 60 84Z" fill="#fffdf8" stroke="#d6c7ea" stroke-width="3" stroke-linejoin="round"/>
+                    <path d="M60 30 C76 18 98 18 112 26 V80 C98 72 76 72 60 84Z" fill="#fff6ea" stroke="#d6c7ea" stroke-width="3" stroke-linejoin="round"/>
+                    <path class="loading-star s1" d="M60 6 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" fill="#ffd97a"/>
+                    <path class="loading-star s2" d="M26 12 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#f6c3d3"/>
+                    <path class="loading-star s3" d="M96 10 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#cbbdf0"/>
+                </svg>
+            </div>
+
+            <h2>Creating your magical world...</h2>
+
+            <p id="loadingMessage">
+                Dreaming up your story characters...
+            </p>
+
+            <div class="loading-track">
+                <div class="loading-progress"></div>
+            </div>
+
+            <p class="loading-note">
+                Your story and illustrations are being created.
+                This may take a little while. Please keep this page open.
+            </p>
+
+        </section>
+
+        <!-- Error Section -->
+        <section id="errorSection" class="error-section hidden" role="alert">
+
+            <p class="error-title">🌧️ Something interrupted the magic.</p>
+
+            <p id="errorMessage"></p>
+
+            <button type="button" id="retryButton">
+                Try again
+            </button>
+
+        </section>
+
+        <!-- Generated Storybook -->
+        <section id="resultSection" class="result-section hidden">
+
+            <div class="book-heading">
+
+                <p class="eyebrow">Your story is ready</p>
+
+                <h2>A world made just for you ✨</h2>
+
+                <p>
+                    Turn the pages and discover your adventure.
+                </p>
+
+                <p id="bookDetails" class="book-details"></p>
+
+            </div>
+
+            <!-- Interactive Book -->
+            <div class="book-shell">
+
+                <div class="book-toolbar">
+
+                    <span id="pageIndicator" aria-live="polite">
+                        Page 1 of 10
+                    </span>
+
+                    <span class="book-label">
+                        🌷 StoryBloom Original
+                    </span>
+
+                </div>
+
+                <div class="book-stage">
+                    <div id="bookPages" class="book-pages">
+                        <!-- JavaScript generates book pages here -->
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="book-controls">
+
+                    <button
+                        type="button"
+                        id="prevPage"
+                        disabled
+                    >
+                        ← Previous
+                    </button>
+
+                    <div id="pageDots" class="page-dots"></div>
+
+                    <button type="button" id="nextPage">
+                        Next →
+                    </button>
+
+                </div>
+
+                <p class="book-hint">Tip: use the arrow keys, or swipe, to turn pages.</p>
+
+            </div>
+
+            <!-- Book Actions -->
+            <div class="book-actions">
+
+                <button
+                    type="button"
+                    id="downloadBookButton"
+                >
+                    📥 Download illustrated PDF
+                </button>
+
+                <button
+                    type="button"
+                    id="createAnother"
+                >
+                    ✦ Create another story
+                </button>
+
+            </div>
+
+            <p id="downloadStatus" class="download-status" aria-live="polite"></p>
+
+        </section>
+
+        <!-- About StoryBloom -->
+        <section class="about-section" id="aboutSection">
+
+            <h2>From one idea to a finished book</h2>
+
+            <p class="about-intro">Three steps, and the last one is the best part.</p>
+
+            <div class="features">
+
+                <div class="feature feature-rose">
+                    <span class="feature-step">1</span>
+                    <h3>Share an idea</h3>
+                    <p>
+                        Pick a topic, the reader's age, and how long the book should be.
+                    </p>
+                </div>
+
+                <div class="feature feature-lavender">
+                    <span class="feature-step">2</span>
+                    <h3>We write and paint</h3>
+                    <p>
+                        Your characters keep the same look from the cover to the last page.
+                    </p>
+                </div>
+
+                <div class="feature feature-mint">
+                    <span class="feature-step">3</span>
+                    <h3>Read or download</h3>
+                    <p>
+                        Turn the pages here, or save the book as an illustrated PDF.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>🌷 StoryBloom 2.0 · Where little imaginations grow.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
