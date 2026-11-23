@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://storybloom-9ghj.onrender.com";
 
 // Marker the backend places between story pages (see storybook_service.py).
 // If it is missing, the story is split into pages by paragraph instead.
@@ -777,3 +777,4 @@ retryButton.addEventListener("click", () => {
 
     storyForm.requestSubmit();
 });
+
